@@ -9,22 +9,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\obj\\Debug\\net8.0\\scopedcss\\bundle\\app.styles.css",
-      "PackagePath": "staticwebassets\\app.styles.css"
-    },
-    {
-      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\css\\app.css",
-      "PackagePath": "staticwebassets\\css\\app.css"
-    },
-    {
-      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
       "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
@@ -39,6 +23,14 @@
     {
       "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\style\\app.css",
+      "PackagePath": "staticwebassets\\style\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\punyasloka.parida\\cloak\\whisk\\app\\wwwroot\\style\\input.css",
+      "PackagePath": "staticwebassets\\style\\input.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.app.Microsoft.AspNetCore.StaticWebAssets.props",

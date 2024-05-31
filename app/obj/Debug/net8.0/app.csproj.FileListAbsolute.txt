@@ -817,10 +817,7 @@ C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\staticwebassets\msbu
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.app.props
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.app.props
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\scopedcss\bundle\app.styles.css
-C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\scopedcss\projectbundle\app.bundle.scp.css
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\compressed\piphkqizah.gz
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\compressed\udjdtf3c1t.gz
 C:\Users\punyasloka.parida\cloak\whisk\app\obj\Debug\net8.0\compressed\lzpi0onl7b.gz
