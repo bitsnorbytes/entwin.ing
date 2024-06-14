@@ -9,6 +9,7 @@ on:
       - 'psb-**'
     paths:
       - 'app/**'
+      - '.github/workflows/app.yaml'
 
 jobs:
   build:
