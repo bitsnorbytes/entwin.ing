@@ -14,6 +14,8 @@ src/SignalR/clients/**/dist/
 modules/
 .ionide/
 
+wwwroot/style/app.css
+
 # File extensions
 *.aps
 *.binlog
