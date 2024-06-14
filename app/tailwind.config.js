@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'sans': ['Righteous', 'sans-serif']
-     
+      'sans': ['InterVariable', 'sans-serif'],
+      'serif': ['Zilla Slab', 'serif']
+
     }
   },
   plugins: [
