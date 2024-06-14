@@ -72,7 +72,7 @@ jobs:
 
       - name: Deploy UI
         run: |
-          swa deploy ./wwwroot \
+          swa deploy static \
           --env production \
           --deployment-token ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }} \
-          -name entwining
+          -name wwwroot
