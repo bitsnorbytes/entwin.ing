@@ -1,4 +1,4 @@
-name: whisk web app - build & test
+name: web app - build & test
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
       - 'psb-**'
     paths:
       - 'app/**'
+      - '.github/workflows/app.yaml'
 
 jobs:
   build:
@@ -23,7 +24,7 @@ jobs:
           curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64
           chmod +x tailwindcss-linux-x64
           mv tailwindcss-linux-x64 tailwindcss
-          ./tailwindcss -i wwwroot/css/main.css -o wwwroot/css/app.css --minify
+          ./tailwindcss -i wwwroot/style/input.css -o wwwroot/style/app.css --minify
         working-directory: app
 
       - name: Setup .NET
@@ -34,11 +35,44 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
         working-directory: app
-
-      - name: Build
-        run: dotnet build --no-restore
-        working-directory: app
         
       - name: Test
         run: dotnet test --no-build --verbosity normal
         working-directory: app
+      
+      - name: Build & Publish
+        run: dotnet publish -c Release -o bin/publish
+        working-directory: app
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wwwroot
+          path: |
+            app/bin/publish/wwwroot
+  
+  deploy:
+    name: 'Deploy App'
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: wwwroot
+          path: wwwroot
+
+      - name: Install Az SWA CLI
+        run: npm install -g @azure/static-web-apps-cli
+
+      - name: Deploy UI
+        run: |
+          swa deploy ./wwwroot \
+          --env production \
+          --deployment-token ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
